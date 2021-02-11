@@ -1,0 +1,53 @@
+body{
+    background-image: url("/images/bgPhoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+
+}
+.el{
+    margin:20px auto;
+    font-size: large;
+}
+
+.label_style{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.BUTTON_PXY {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #645A58;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 25px;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .BUTTON_PXY:hover {
+    color: #FFFFFF;
+    background:#645A58;
+    border: solid #fff 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }

@@ -4,6 +4,7 @@ const app=express();
 const https=require("https");
 const bodyParser=require("body-parser");
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.static("public"));
 
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/index.html");
@@ -17,8 +18,7 @@ app.post("/",function(req,res){
         response.on("data",function(data){
             var wdata=JSON.parse(data);
             var icon="http://openweathermap.org/img/wn/"+ wdata.weather[0].icon +"@2x.png";
-            res.write("<h1>Temprature in "+ query +" is "+wdata.main.temp+"</h1>");
-            res.write("<img src="+icon+">")
+            res.write("<body style='background-color: #645A58;color:white;text-align:center'><h1>Temprature in "+ query +" is "+wdata.main.temp+"</h1><img src="+icon+"></body>");
             res.send();
         })
     })
